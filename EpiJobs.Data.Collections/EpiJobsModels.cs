@@ -45,4 +45,24 @@ namespace EpiJobs.Data.Collections
     public class Opportunities : List<Opportunity> { }
 
     public class Applicants : List<Applicant> { }
+
+    public class OpportunitySearchParams {
+        public string Keyword { get; set; }
+        public string City { get; set; }
+        public string StateProvince { get; set; }
+        public string PostalCode { get; set; }
+        public string Country { get; set; }
+        public string Category { get; set; }
+    }
+
+    public class PasswordResetParams {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+    }
+    public class ApplyParams {
+        public int CandidateId { get; set; }
+        public int OpportunityId { get; set; }
+    }
 }
